@@ -24,15 +24,9 @@ Open `index.html` in a browser. Everything works except the contact form, which 
 
 Either way, if the domain is currently on Squarespace, you move the DNS records there; you don't need to transfer the domain.
 
-## Turn on the contact form
+## Contact form
 
-The form sends to your real inbox through Formspree, so your address never appears on the page.
-
-1. Create a free account at formspree.io and add a new form, using the email you want messages sent to.
-2. Copy the form's endpoint. It looks like `https://formspree.io/f/abcdwxyz`.
-3. In `index.html`, find `https://formspree.io/f/YOUR_FORM_ID` and replace it with your endpoint.
-
-Spam protection is already in place: a hidden "honeypot" field that bots fill in and people never see. Formspree also filters spam on its side, and you can add its reCAPTCHA option later if needed.
+The form posts to Formspree (`https://formspree.io/f/xljbnazy`), which forwards messages to your inbox so your address never appears on the page. A hidden honeypot field filters bots, and Formspree filters spam on its side.
 
 ## Still to add
 
