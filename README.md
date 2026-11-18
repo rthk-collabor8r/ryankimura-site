@@ -9,7 +9,7 @@ A single static page: `index.html` with its CSS and JavaScript inline, plus an `
 | `index.html` | The whole site |
 | `images/` | Web-sized photos and artifacts (about 1.8 MB total) |
 | `favicon.ico`, `favicon.png`, `apple-touch-icon.png` | Browser and phone icons (the three banner shapes on navy) |
-| `og-image.png` | The preview image when the link is shared (your LinkedIn banner) |
+| `og-card.png` | The preview image when the link is shared (headline, photo, URL) |
 | `robots.txt`, `sitemap.xml` | For search engines |
 
 ## Preview locally
