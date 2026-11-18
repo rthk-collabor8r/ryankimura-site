@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ryan Kimura · Creating clarity and possibility</title>
+<meta name="description" content="Ryan Kimura builds new products and charts their path to revenue. Product leader at UL Solutions. Former startup founder and board member.">
+<link rel="canonical" href="https://ryankimura.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ryankimura.com/">
+<meta property="og:title" content="Ryan Kimura · Creating clarity and possibility">
+<meta property="og:description" content="I build new products and chart their path to revenue.">
+<meta property="og:image" content="https://ryankimura.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#133159">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#133159}a:hover{color:#0B1F3A}
+.wrap{max-width:1180px;margin:0 auto;padding-left:28px;padding-right:28px;box-sizing:border-box;position:relative}
+.h2{margin:0;font-family:Montserrat,sans-serif;font-weight:300;font-size:clamp(34px,4.4vw,46px);line-height:1.12}
+.lbl{font:600 13px/1 Inter,system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#4E5A69}
+.body{font-size:18px;line-height:1.65}
+.muted{color:#3F4A5A}
+.flag{display:inline-block;font:600 12px/1.3 Inter,system-ui,sans-serif;color:#6B3A00;background:#FFF0C2;border-radius:4px;padding:3px 7px;margin-left:8px;vertical-align:middle}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:999px;font:500 17px/1 Inter,system-ui,sans-serif;text-decoration:none;border:0;cursor:pointer}
+.deco{position:absolute;pointer-events:none}
+/* texture */
+.tx-lines{background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.045) 0 1px,transparent 1px 14px)}
+.tx-dots{background-image:radial-gradient(rgba(19,49,89,.10) 1px,transparent 1.2px);background-size:22px 22px}
+/* stats bar */
+.stat{flex:1 1 220px;min-width:0;display:flex;flex-direction:column;gap:8px}
+.stat b{font-family:Montserrat,sans-serif;font-weight:300;font-size:clamp(34px,3.6vw,44px);line-height:1;color:#FFFFFF}
+.stat span{font-size:16px;line-height:1.45;color:#DCE4EE}
+/* idea to revenue */
+.flowl{display:flex;justify-content:space-between}
+.steps{display:flex}
+.step{flex:1 1 0;min-width:0;position:relative;border-top:2px solid #133159;padding:26px 36px 0 0;display:flex;flex-direction:column;gap:10px}
+.step:last-child{padding-right:0}
+.dot{position:absolute;top:-7px;left:0;width:12px;height:12px;border-radius:50%;background:#133159}
+.step h3{margin:0;font-size:22px;font-weight:600}
+.step p{margin:0;font-size:18px;line-height:1.6;color:#3F4A5A}
+.flowend{display:none}
+@media (max-width:720px){
+ .flowl .r{display:none}
+ .steps{flex-direction:column;border-left:2px solid #133159;margin-left:5px}
+ .step{border-top:0;padding:0 0 30px 26px}
+ .dot{top:7px;left:-7px}
+ .flowend{display:block}
+}
+/* work */
+.card{all:unset;box-sizing:border-box;cursor:pointer;width:100%;display:flex;flex-direction:column;gap:10px}
+.card:focus-visible,.tile:focus-visible{outline:3px solid #ED4F5B;outline-offset:4px}
+.card:hover .ctitle{text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1px}
+.cimg{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:6px;display:block;background:#ECEEF2;margin-bottom:6px}
+.ctitle{font-family:Montserrat,sans-serif;font-weight:400;font-size:28px;line-height:1.2}
+.cdesc{font-size:17px;line-height:1.5;color:#3F4A5A}
+.cn{flex:1 1 440px;min-width:0;max-width:calc(50% - 20px)}
+.cw{flex:1 1 100%;min-width:0}
+.cw .cimg{aspect-ratio:12/5 !important}
+.case{display:flex;flex-direction:column;gap:30px;padding:30px 0 10px}
+.pitch{margin:0;max-width:880px;font-family:Montserrat,sans-serif;font-weight:300;font-size:clamp(23px,2.6vw,30px);line-height:1.42}
+.tiles{display:flex;flex-wrap:wrap;gap:18px}
+.tile{flex:1 1 300px;min-width:0;aspect-ratio:3/2;border-radius:6px;overflow:hidden;position:relative;display:block;text-decoration:none;box-sizing:border-box}
+.tile>img{width:100%;height:100%;object-fit:cover;display:block}
+.tile.pl{padding:5%}
+.tile.pl>img{object-fit:contain;position:absolute;left:5%;top:5%;width:90%;height:90%}
+.play{position:absolute;left:18px;bottom:18px;display:flex;gap:12px;align-items:center;background:rgba(19,49,89,.94);color:#FFFFFF;border-radius:999px;padding:9px 20px 9px 9px;font:500 16px/1 Inter,system-ui,sans-serif}
+.stats{margin:0;padding:20px 0 0;list-style:none;display:flex;flex-wrap:wrap;gap:14px 44px;border-top:1px solid #D5DAE1;font-size:17px;color:#3F4A5A}
+.stats b{font-family:Montserrat,sans-serif;font-weight:400;font-size:24px;color:#133159;margin-right:8px}
+.links{display:flex;flex-wrap:wrap;gap:12px 28px;font-size:17px;font-weight:500}
+.links .lbl{align-self:center}
+/* form */
+.field{display:flex;flex-direction:column;gap:6px}
+.field label{font-size:15px;font-weight:500;color:#3F4A5A}
+.field input,.field select,.field textarea{font:400 17px/1.4 Inter,system-ui,sans-serif;color:#133159;border:1px solid #A3ABB7;border-radius:6px;padding:12px 14px;background:#FFFFFF;min-height:50px;box-sizing:border-box;width:100%}
+.field textarea{min-height:130px;resize:vertical}
+.duo{display:flex;gap:40px;margin-bottom:6px}
+.duo img{flex:1 1 0;min-width:0;aspect-ratio:3/2;object-fit:cover;border-radius:6px;display:block}
+@media (max-width:720px){.duo{gap:10px}}
+.see{all:unset;cursor:pointer;color:#133159;text-decoration:underline;text-underline-offset:3px;font-style:italic}
+.see:focus-visible{outline:3px solid #ED4F5B;outline-offset:2px}
+.fmt{margin-top:150px}
+@media (max-width:720px){
+ .cn{max-width:100%}
+ .cw .cimg{aspect-ratio:3/2 !important}
+ .hm{display:none}
+ .fmt{margin-top:0}
+ .bart{display:none}
+}
+
+[hidden]{display:none !important}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+
+<div style="font-family: Inter, system-ui, sans-serif; color: #133159; background: #FFFFFF; overflow-x: hidden;">
+
+<header style="background: #E2E7EC;">
+<nav aria-label="Main" class="wrap" style="padding-top: 24px; padding-bottom: 24px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between;">
+<a href="#top" style="font-family: Montserrat, sans-serif; font-weight: 500; font-size: 18px; letter-spacing: .06em; text-decoration: none;">RYAN KIMURA</a>
+<div style="display: flex; flex-wrap: wrap; gap: 26px; font-size: 17px;">
+<a href="#work" style="text-decoration: none;">Work</a>
+<a href="#perspective" style="text-decoration: none;">Perspective</a>
+<a href="#about" style="text-decoration: none;">About</a>
+<a href="#contact" style="text-decoration: none;">Contact</a>
+</div>
+</nav>
+</header>
+
+<!-- HERO -->
+<section id="top" style="background: radial-gradient(ellipse at 15% 35%, #EEF1F5 0%, #E2E7EC 55%); overflow: hidden;">
+<div class="wrap" style="padding-top: 20px; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-end;">
+<div style="flex: 1 1 500px; min-width: 0; display: flex; flex-direction: column; gap: 30px; padding: 48px 0 92px;">
+<span aria-hidden="true" style="display: flex; gap: 10px; align-items: center;"><span style="width: 18px; height: 18px; border-radius: 50%; background: #FFDE59;"></span><span style="width: 18px; height: 18px; background: #FFA28D;"></span><span style="width: 18px; height: 18px; border-radius: 50%; background: #ED4F5B;"></span></span>
+<h1 style="margin: 0; font-family: Montserrat, sans-serif; font-weight: 300; font-size: clamp(44px, 6.2vw, 74px); line-height: 1.03;">Creating clarity and possibility.</h1>
+<p style="margin: 0; font-size: clamp(21px, 2vw, 25px); line-height: 1.45; max-width: 560px;">I build new products and chart their path to revenue.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 22px; align-items: center;">
+<a class="btn" href="#work" style="background: #133159; color: #FFFFFF;">See the work</a>
+<a href="#contact" style="font-size: 17px;">Get in touch</a>
+</div>
+</div>
+<img src="images/ryan-kimura.jpg" alt="Ryan Kimura" style="flex: 0 1 420px; min-width: 0; width: 420px; max-width: 100%; height: auto; display: block;">
+</div>
+</section>
+
+<!-- STATS -->
+<section aria-label="At a glance" class="tx-lines" style="background-color: #133159; color: #FFFFFF; position: relative; overflow: hidden;">
+<span class="deco hm" aria-hidden="true" style="right: 5%; top: -14px; width: 30px; height: 30px; background: #FFDE59;"></span>
+<span class="deco hm" aria-hidden="true" style="right: calc(5% + 9px); top: -5px; width: 30px; height: 30px; border: 1.5px solid #FFFFFF;"></span>
+<div class="wrap" style="padding-top: 40px; padding-bottom: 40px; display: flex; flex-wrap: wrap; gap: 28px 40px;">
+<div class="stat"><b>$35M+</b><span>net-new revenue created</span></div>
+<div class="stat"><b>1,000+</b><span>brands on a product-led platform I created</span></div>
+<div class="stat"><b>2 exits</b><span>as founder and board member</span></div>
+</div>
+</section>
+
+<!-- WHAT I DO -->
+<section aria-labelledby="do-h">
+<div class="wrap" style="padding-top: 96px; padding-bottom: 48px; display: flex; flex-direction: column; gap: 30px;">
+<h2 id="do-h" class="h2">The work I do best</h2>
+<div class="flowl"><span class="lbl">Idea</span><span class="lbl r">Revenue</span></div>
+<div class="steps" style="margin-top: -10px;">
+<div class="step"><span class="dot" aria-hidden="true"></span><h3>Build the product</h3><p>Find the gap, define what should exist, and get a team shipping it.</p></div>
+<div class="step"><span class="dot" aria-hidden="true"></span><h3>Shape the strategy</h3><p>Turn an unclear opportunity into a business leaders can back.</p></div>
+<div class="step"><span class="dot" aria-hidden="true"></span><h3>Take it to market</h3><p>Package it, tell the story, arm the sellers, and own the number.</p></div>
+</div>
+<span class="lbl flowend">Revenue</span>
+</div>
+</section>
+
+<!-- WORK -->
+<section id="work" aria-labelledby="work-h" class="tx-dots" style="position: relative; overflow: hidden; background-color: #F7F8FA;">
+<div class="wrap" style="padding-top: 88px; padding-bottom: 88px; display: flex; flex-direction: column; gap: 36px;">
+<div style="display: flex; flex-direction: column; gap: 12px;">
+<h2 id="work-h" class="h2">Selected work</h2>
+<p class="body muted" style="margin: 0; max-width: 620px;">Two decades of building in tech and food companies.</p>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 56px 40px;">
+
+<!-- C1 Agentic Discovery -->
+<article id="c1" class="cw" data-wide="1">
+<button class="card" type="button" aria-expanded="false" aria-controls="c1-case" data-case="c1">
+<img loading="lazy" decoding="async" class="cimg" src="images/agentic-discovery.jpg" alt="The launch ad, There's a third shelf, beside the Agentic Discovery content readiness view" style="object-position: left center;">
+<span class="ctitle">Agentic Discovery</span>
+<span class="cdesc">A new AI product, from concept to launch.</span>
+</button>
+<div class="case-wrap" id="c1-case" hidden>
+<div class="case">
+<p class="pitch">Shoppers started asking AI what to buy, and brands had no idea what AI was saying about them. We built SPINS' first AI-native product to show them, then launched it with one simple idea: there's a third shelf.</p>
+<ul class="stats"><li><b>226</b>free sign-ups in ten days</li></ul>
+</div>
+</div>
+</article>
+
+<!-- C2 Launches -->
+<article id="c2" class="cn">
+<button class="card" type="button" aria-expanded="false" aria-controls="c2-case" data-case="c2">
+<span class="cimg" role="img" aria-label="Pipeline and bookings rising across three launches" style="display: flex; flex-direction: column; justify-content: flex-end; padding: 7% 8% 9%; box-sizing: border-box; background: linear-gradient(135deg, #FFF4EF 0%, #EEF1F5 100%); position: relative;">
+<svg aria-hidden="true" viewBox="0 0 100 40" preserveAspectRatio="none" style="position: absolute; left: 8%; right: 8%; top: 12%; width: 84%; height: 46%; overflow: visible;"><polyline points="0,38 18,33 34,30 50,22 66,17 82,9 100,2" fill="none" stroke="#133159" stroke-width=".6" stroke-dasharray="1.6 1.2" vector-effect="non-scaling-stroke"></polyline></svg>
+<span aria-hidden="true" style="display: flex; align-items: flex-end; gap: 3.5%; height: 58%;">
+<span style="flex: 1; height: 18%; background: #FFDE59; border-radius: 3px 3px 0 0;"></span><span style="flex: 1; height: 26%; background: #FFDE59; border-radius: 3px 3px 0 0;"></span><span style="flex: 1; height: 33%; background: #FFDE59; border-radius: 3px 3px 0 0;"></span>
+<span style="flex: 1; height: 42%; background: #FFA28D; border-radius: 3px 3px 0 0;"></span><span style="flex: 1; height: 52%; background: #FFA28D; border-radius: 3px 3px 0 0;"></span><span style="flex: 1; height: 61%; background: #FFA28D; border-radius: 3px 3px 0 0;"></span>
+<span style="flex: 1; height: 72%; background: #ED4F5B; border-radius: 3px 3px 0 0;"></span><span style="flex: 1; height: 84%; background: #ED4F5B; border-radius: 3px 3px 0 0;"></span><span style="flex: 1; height: 100%; background: #133159; border-radius: 3px 3px 0 0;"></span>
+</span>
+<span aria-hidden="true" style="border-top: 1.5px solid #133159;"></span>
+</span>
+<span class="ctitle">Product Launches</span>
+<span class="cdesc">Three growth campaigns. Eight figures in pipeline and bookings.</span>
+</button>
+<div class="case-wrap" id="c2-case" hidden>
+<div class="case">
+<p class="pitch">A launch is a growth campaign, not a press release. For these new products, we built one sharp narrative each, armed sellers with proof, and ran every channel to the same story. The result showed up where it counts: pipeline and bookings.</p>
+<ul class="stats"><li><b>8 figures</b>in pipeline and bookings</li><li><b>Hundreds</b>of new clients</li><li><b>$4.8M</b>in new retail sales for one AttLab brand</li></ul>
+<div class="links"><span class="lbl">More</span><a href="https://www.spins.com/innovate/">AttLab</a><a href="https://www.spins.com/spins-omni/">SPINS Omni</a><a href="https://www.spins.com/solutions/trilens-panel/">TriLens Consumer Panel</a></div>
+</div>
+</div>
+</article>
+
+<!-- C3 One Portfolio -->
+<article id="c3" class="cn">
+<button class="card" type="button" aria-expanded="false" aria-controls="c3-case" data-case="c3">
+<span class="cimg" role="img" aria-label="Dozens of apps folded into three platforms" style="display: flex; align-items: center; justify-content: center; gap: 6%; padding: 7%; box-sizing: border-box; background: linear-gradient(135deg, #EEF1F5 0%, #FFF4EF 100%);">
+<span aria-hidden="true" style="flex: 1.3 1 0; max-width: 340px; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 6px;"><span style="aspect-ratio: 1; border: 1.5px solid #133159; border-radius: 3px; background: #FFFFFF;"></span><span style="aspect-ratio: 1; border: 1.5px solid #133159; border-radius: 3px; background: #FFFFFF;"></span><span style="aspect-ratio: 1; border: 1.5px solid #133159; border-radius: 3px; background: #FFDE59;"></span><span style="aspect-ratio: 1; border: 1.5px solid #133159; border-radius: 3px; background: #FFFFFF;"></span><span style="aspect-ratio: 1; border: 1.5px solid #133159; border-radius: 3px; background: #FFA28D;"></span><span style="aspect-ratio: 1; border: 1.5px solid #133159; border-radius: 3px; background: #FFFFFF;"></span><span style="aspect-ratio: 1; border: 1.5px solid #133159; border-radius: 3px; background: #FFFFFF;"></span><span style="aspect-ratio: 1; border: 1.5px solid #133159; border-radius: 3px; background: #ED4F5B;"></span><span style="aspect-ratio: 1; border: 1.5px solid #133159; border-radius: 3px; background: #FFFFFF;"></span><span style="aspect-ratio: 1; border: 1.5px solid #133159; border-radius: 3px; background: #FFFFFF;"></span><span style="aspect-ratio: 1; border: 1.5px solid #133159; border-radius: 3px; background: #FFFFFF;"></span><span style="aspect-ratio: 1; border: 1.5px solid #133159; border-radius: 3px; background: #FFDE59;"></span><span style="aspect-ratio: 1; border: 1.5px solid #133159; border-radius: 3px; background: #FFFFFF;"></span><span style="aspect-ratio: 1; border: 1.5px solid #133159; border-radius: 3px; background: #FFA28D;"></span><span style="aspect-ratio: 1; border: 1.5px solid #133159; border-radius: 3px; background: #FFFFFF;"></span><span style="aspect-ratio: 1; border: 1.5px solid #133159; border-radius: 3px; background: #FFFFFF;"></span><span style="aspect-ratio: 1; border: 1.5px solid #133159; border-radius: 3px; background: #FFFFFF;"></span><span style="aspect-ratio: 1; border: 1.5px solid #133159; border-radius: 3px; background: #ED4F5B;"></span><span style="aspect-ratio: 1; border: 1.5px solid #133159; border-radius: 3px; background: #FFFFFF;"></span><span style="aspect-ratio: 1; border: 1.5px solid #133159; border-radius: 3px; background: #FFDE59;"></span><span style="aspect-ratio: 1; border: 1.5px solid #133159; border-radius: 3px; background: #FFFFFF;"></span><span style="aspect-ratio: 1; border: 1.5px solid #133159; border-radius: 3px; background: #FFFFFF;"></span><span style="aspect-ratio: 1; border: 1.5px solid #133159; border-radius: 3px; background: #FFA28D;"></span><span style="aspect-ratio: 1; border: 1.5px solid #133159; border-radius: 3px; background: #FFFFFF;"></span></span>
+<span aria-hidden="true" style="font-size: 30px; font-weight: 300;">→</span>
+<span aria-hidden="true" style="flex: 1 1 0; max-width: 260px; display: flex; flex-direction: column; gap: 10px; font: 600 15px/1 Inter, system-ui, sans-serif;"><span style="background: #FFFFFF; border-left: 10px solid #FFDE59; padding: 15px 12px; border-radius: 3px;">Intelligence</span><span style="background: #FFFFFF; border-left: 10px solid #FFA28D; padding: 15px 12px; border-radius: 3px;">Journey</span><span style="background: #FFFFFF; border-left: 10px solid #ED4F5B; padding: 15px 12px; border-radius: 3px;">Foundry</span></span>
+</span>
+<span class="ctitle">One Portfolio</span>
+<span class="cdesc">Dozens of apps, three platforms, one story.</span>
+</button>
+<div class="case-wrap" id="c3-case" hidden>
+<div class="case">
+<p class="pitch">Dozens of apps, each with its own story. We folded them into three platforms a buyer could hold in their head, and gave the company a new idea to stand on: the Product Knowledge Graph, the intelligence behind every shelf.</p>
+<ul class="stats"><li><b>3</b>platforms on one Product Knowledge Graph</li><li><b>800</b>clients at the launch</li></ul>
+</div>
+</div>
+</article>
+
+<!-- C9 Product-led platform -->
+<article id="c9" class="cn">
+<button class="card" type="button" aria-expanded="false" aria-controls="c9-case" data-case="c9">
+<span class="cimg" role="img" aria-label="More than a thousand brands on a self-serve platform" style="position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; background: linear-gradient(135deg, #1E3F6B 0%, #133159 60%, #0E2747 100%);">
+<span aria-hidden="true" style="position: absolute; inset: 0; background-image: radial-gradient(rgba(255,222,89,.85) 1.6px, transparent 2px), radial-gradient(rgba(255,162,141,.7) 1.6px, transparent 2px); background-size: 22px 22px, 22px 22px; background-position: 0 0, 11px 11px; -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,.15), rgba(0,0,0,.9)); mask-image: linear-gradient(90deg, rgba(0,0,0,.15), rgba(0,0,0,.9));"></span>
+<span aria-hidden="true" style="position: relative; font-family: Montserrat, sans-serif; font-weight: 300; font-size: clamp(54px, 7vw, 92px); line-height: 1; color: #FFFFFF;">1,000+</span>
+<span aria-hidden="true" style="position: relative; font: 600 14px/1 Inter, system-ui, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: #FFDE59;">brands, self-serve</span>
+</span>
+<span class="ctitle">Product-Led Platform</span>
+<span class="cdesc">A self-serve platform that kept growing.</span>
+</button>
+<div class="case-wrap" id="c9-case" hidden>
+<div class="case">
+<p class="pitch">Performance data in CPG had always arrived with a sales call and a long onboarding. We built a platform where a brand team could start on its own, see value in minutes, and grow from there, opening the data to brands that had never been able to buy it. I got it started. It kept growing.</p>
+<ul class="stats"><li><b>5</b>product directors and managers on the team I led</li></ul>
+</div>
+</div>
+</article>
+
+<!-- C4 Product Innovation -->
+<article id="c4" class="cn">
+<button class="card" type="button" aria-expanded="false" aria-controls="c4-case" data-case="c4">
+<img loading="lazy" decoding="async" class="cimg" src="images/product-innovation.jpg" alt="">
+<span class="ctitle">Product Innovation</span>
+<span class="cdesc">Two new products, from client conversations to paying customers.</span>
+</button>
+<div class="case-wrap" id="c4-case" hidden>
+<div class="case">
+<p class="pitch">A data company that had sold the same two products for a decade needed what came next. We built an innovation capability around listening to clients, went deep with them, and turned best-in-class consulting into winning products. The job: find the ideas worth backing, prove them, and fuel the growth.</p>
+<ul class="stats"><li><b>2</b>new businesses, each grown to 8 figures</li><li><b>3 years</b>running the P&amp;L</li></ul>
+</div>
+</div>
+</article>
+
+<!-- C6 Local Foods -->
+<article id="c6" class="cn">
+<button class="card" type="button" aria-expanded="false" aria-controls="c6-case" data-case="c6">
+<img loading="lazy" decoding="async" class="cimg" src="images/local-foods.jpg" alt="">
+<span class="ctitle">Local Foods</span>
+<span class="cdesc">Chicago's first food hub. Started, scaled, and sold.</span>
+</button>
+<div class="case-wrap" id="c6-case" hidden>
+<div class="case">
+<p class="pitch">Chefs wanted local food. Farmers wanted to sell it. Nobody had built the road between them, so we did: a Chicago food hub, then a warehouse turned market and butcher shop that Bon Appétit named one of its favorites in America. Then a lunch counter in the Loop that Eater put on its Hot 38.</p>
+<div class="tiles">
+<div class="tile"><img loading="lazy" decoding="async" src="images/local-foods-after.jpg" alt="The finished market"></div>
+<div class="tile"><img loading="lazy" decoding="async" src="images/local-foods-team.jpg" alt="The Local Foods team"></div>
+<div class="tile"><img loading="lazy" decoding="async" src="images/grill-entrance.jpg" alt="Butcher &amp; Larder Grill in the Loop"></div>
+</div>
+<ul class="stats"><li><b>8 figures</b>in revenue</li><li><b>50</b>people on the team</li><li><b>$50M</b>paid to 1,000+ Midwest farmers and makers</li></ul>
+</div>
+</div>
+</article>
+
+<!-- C7 HandCut -->
+<article id="c7" class="cn">
+<button class="card" type="button" aria-expanded="false" aria-controls="c7-case" data-case="c7">
+<img loading="lazy" decoding="async" class="cimg" src="images/handcut-foods.jpg" alt="">
+<span class="ctitle">HandCut Foods</span>
+<span class="cdesc">Founding board member and chair, through acquisition.</span>
+</button>
+<div class="case-wrap" id="c7-case" hidden>
+<div class="case">
+<p class="pitch">Scratch-made food for schools, campuses and offices: the cafeteria lunch people actually look forward to. I sat on the board from the first meeting, later as chair, and helped steer it through COVID to a 2022 acquisition.</p>
+</div>
+</div>
+</article>
+
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px; border-top: 1px solid #D5DAE1; padding-top: 32px;">
+<p class="body" style="margin: 0; flex: 1 1 380px;">There's more behind each of these, and a few that didn't fit on one page.</p>
+<a class="btn" href="#contact" style="background: #133159; color: #FFFFFF;">Ask me about the work</a>
+</div>
+</div>
+</section>
+
+<!-- PERSPECTIVE -->
+<section id="perspective" aria-labelledby="persp-h" style="background: linear-gradient(160deg, #173A68 0%, #133159 45%, #0E2747 100%); color: #FFFFFF; position: relative; overflow: hidden;">
+<div class="tx-lines" style="position: absolute; inset: 0; pointer-events: none;"></div>
+<span class="deco hm" aria-hidden="true" style="left: 4%; top: 72px; width: 56px; height: 56px; background: #FFDE59;"></span>
+<span class="deco hm" aria-hidden="true" style="left: calc(4% - 11px); top: 84px; width: 56px; height: 56px; border: 1.5px solid #FFFFFF;"></span>
+<span class="deco hm" aria-hidden="true" style="right: 7%; top: 130px; width: 96px; height: 96px; border-radius: 50%; border: 1.5px solid rgba(255,255,255,.55);"></span>
+<span class="deco hm" aria-hidden="true" style="right: 11%; bottom: 56px; width: 120px; height: 22px; background: #ED4F5B;"></span>
+<div class="wrap" style="padding-top: 140px; padding-bottom: 110px; display: flex; flex-direction: column; gap: 44px;">
+<div style="display: flex; flex-direction: column; gap: 14px;">
+<p class="lbl" style="margin: 0; color: #FFDE59;">Perspective</p>
+<h2 id="persp-h" class="h2">A few things I believe</h2>
+</div>
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column;">
+<li style="border-top: 1px solid rgba(255,255,255,.25); padding: 30px 0; display: flex; flex-wrap: wrap; gap: 12px 44px;"><span style="flex: 1 1 360px; font-size: 27px; line-height: 1.32; font-family: Montserrat, sans-serif; font-weight: 300;">Bring marketing in on day one.</span><span style="flex: 1 1 360px; font-size: 18px; line-height: 1.6; color: #DCE4EE;">The best launches I've been part of started with everyone in the room: one strategy, agreed early, and honest updates whether the news was good or bad.</span></li>
+<li style="border-top: 1px solid rgba(255,255,255,.25); padding: 30px 0; display: flex; flex-wrap: wrap; gap: 12px 44px;"><span style="flex: 1 1 360px; font-size: 27px; line-height: 1.32; font-family: Montserrat, sans-serif; font-weight: 300;">Deciding what to build is the hard part now.</span><span style="flex: 1 1 360px; font-size: 18px; line-height: 1.6; color: #DCE4EE;">Code comes quickly. Judgment doesn't. The teams that pull ahead test ideas in days, not quarters.</span></li>
+<li style="border-top: 1px solid rgba(255,255,255,.25); padding: 30px 0; display: flex; flex-wrap: wrap; gap: 12px 44px;"><span style="flex: 1 1 360px; font-size: 27px; line-height: 1.32; font-family: Montserrat, sans-serif; font-weight: 300;">Systems over heroics.</span><span style="flex: 1 1 360px; font-size: 18px; line-height: 1.6; color: #DCE4EE;">Teams shouldn't need rescuing. Clear goals, a steady rhythm and shared language let good people do their best work without me in the room.</span></li>
+<li style="border-top: 1px solid rgba(255,255,255,.25); border-bottom: 1px solid rgba(255,255,255,.25); padding: 30px 0; display: flex; flex-wrap: wrap; gap: 12px 44px;"><span style="flex: 1 1 360px; font-size: 27px; line-height: 1.32; font-family: Montserrat, sans-serif; font-weight: 300;">Say it straight. Then say it great.</span><span style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 10px;"><span style="font-size: 18px; line-height: 1.6; color: #DCE4EE;">Clarity first, craft second. Precise language changes what people do.</span></span></li>
+</ol>
+</div>
+</section>
+
+<!-- VOICES (toggle in Tweaks) -->
+
+<section aria-labelledby="voices-h" style="background: linear-gradient(180deg, #FFF1EA 0%, #FFF8F5 100%); position: relative; overflow: hidden;">
+<span class="deco hm" aria-hidden="true" style="right: 5%; top: 52px; width: 28px; height: 28px; border-radius: 50%; background: #FFA28D;"></span>
+<span class="deco hm" aria-hidden="true" style="right: calc(5% + 40px); top: 70px; width: 44px; height: 44px; border-radius: 50%; border: 1.5px solid #ED4F5B;"></span>
+<div class="wrap" style="padding-top: 96px; padding-bottom: 96px; display: flex; flex-direction: column; gap: 40px;">
+<h2 id="voices-h" class="h2">In their words</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 36px 44px;">
+<figure style="margin: 0; flex: 1 1 420px; display: flex; flex-direction: column; gap: 12px; border-top: 3px solid #ED4F5B; padding-top: 20px;"><blockquote style="margin: 0; font-size: 23px; line-height: 1.45; font-family: Montserrat, sans-serif; font-weight: 300;">"He took product marketing from the last mile to the extra mile."</blockquote><figcaption style="font-size: 16px; color: #3F4A5A;">A go-to-market leader</figcaption></figure>
+<figure style="margin: 0; flex: 1 1 420px; display: flex; flex-direction: column; gap: 12px; border-top: 3px solid #ED4F5B; padding-top: 20px;"><blockquote style="margin: 0; font-size: 23px; line-height: 1.45; font-family: Montserrat, sans-serif; font-weight: 300;">"He's been an incredible partner to build with."</blockquote><figcaption style="font-size: 16px; color: #3F4A5A;">A product leader</figcaption></figure>
+<figure style="margin: 0; flex: 1 1 420px; display: flex; flex-direction: column; gap: 12px; border-top: 3px solid #FFDE59; padding-top: 20px;"><blockquote style="margin: 0; font-size: 23px; line-height: 1.45; font-family: Montserrat, sans-serif; font-weight: 300;">"A strategic mind, a creative spirit, a passion for doing better than what's expected."</blockquote><figcaption style="font-size: 16px; color: #3F4A5A;">A marketing executive</figcaption></figure>
+<figure style="margin: 0; flex: 1 1 420px; display: flex; flex-direction: column; gap: 12px; border-top: 3px solid #ED4F5B; padding-top: 20px;"><blockquote style="margin: 0; font-size: 23px; line-height: 1.45; font-family: Montserrat, sans-serif; font-weight: 300;">"Part CFO, part CTO, and part COO."</blockquote><figcaption style="font-size: 16px; color: #3F4A5A;">A finance partner</figcaption></figure>
+</div>
+</div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" aria-labelledby="about-h">
+<div class="wrap" style="padding-top: 104px; padding-bottom: 104px; display: flex; flex-wrap: wrap; gap: 72px; align-items: center;">
+<div style="flex: 0 1 340px; min-width: 0; position: relative; margin: 0 18px 18px 0;">
+<span class="deco" aria-hidden="true" style="right: -18px; bottom: -18px; width: 70%; height: 70%; background: #FFDE59;"></span>
+<span class="deco" aria-hidden="true" style="left: -14px; top: -14px; width: 64px; height: 64px; border: 1.5px solid #133159;"></span>
+<img loading="lazy" decoding="async" src="images/ryan-kimura-candid.jpg" alt="Ryan Kimura" style="position: relative; width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 6px; display: block;">
+</div>
+<div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 22px;">
+<h2 id="about-h" class="h2">The short version</h2>
+<p class="body" style="margin: 0; font-weight: 600;">Product leader at UL Solutions. Previously VP, Product Marketing at SPINS. Former startup founder and board member. Two decades of building in product, strategy and go-to-market.</p>
+<p class="body" style="margin: 0;">At ten, my grandmother offered me my first entrepreneurial venture: selling vegetables from her garden, streetside. I loved it, and kept a binder of every sale. I still have it <button class="see" type="button" aria-expanded="false" aria-controls="binder" id="see-binder">(see it)</button>.</p>
+<figure id="binder" hidden style="margin: 0; display: flex; flex-direction: column; gap: 10px; max-width: 300px;"><img loading="lazy" decoding="async" src="images/binder.jpg" alt="A worn teal Five Star binder with RYAN KIMURA written on the cover in marker" style="width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 6px; display: block; transform: rotate(-2deg); box-shadow: 0 10px 24px rgba(19,49,89,.18);"><figcaption style="font-size: 15px; color: #4E5A69;">Exhibit A.</figcaption></figure>
+<p class="body" style="margin: 0;">That itch never left. It became a DJ business, then a food company, then a run of new products inside a data company. Now it's software at UL Solutions.</p>
+<p class="body muted" style="margin: 0;">I live in Chicagoland with my family. I like hard problems, good people, and things that don't exist yet.</p>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" aria-labelledby="contact-h" style="background: linear-gradient(160deg, #173A68 0%, #133159 50%, #0E2747 100%); color: #FFFFFF; position: relative; overflow: hidden;">
+<div class="tx-lines" style="position: absolute; inset: 0; pointer-events: none;"></div>
+<img loading="lazy" decoding="async" class="deco bart" src="images/banner-art.png" alt="" aria-hidden="true" style="right: 0; top: 0; width: min(440px, 42vw);">
+<div class="wrap" style="padding-top: 104px; padding-bottom: 104px; display: flex; flex-wrap: wrap; gap: 52px; align-items: flex-start;">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 30px; position: relative;">
+<h2 id="contact-h" class="h2" style="line-height: 1.25; max-width: 560px;">If something here sounds like the problem you're working on, I'd like to hear about it.</h2>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column;">
+<li style="border-top: 1px solid rgba(255,255,255,.25); padding: 18px 0; display: flex; flex-direction: column; gap: 5px;"><span style="font-size: 18px; font-weight: 600;">Building a team</span><span style="font-size: 17px; line-height: 1.5; color: #DCE4EE;">Product, marketing and go-to-market leadership in B2B tech.</span></li>
+<li style="border-top: 1px solid rgba(255,255,255,.25); padding: 18px 0; display: flex; flex-direction: column; gap: 5px;"><span style="font-size: 18px; font-weight: 600;">Bringing in help</span><span style="font-size: 17px; line-height: 1.5; color: #DCE4EE;">Launches, portfolio strategy, and taking an AI product to market.</span></li>
+<li style="border-top: 1px solid rgba(255,255,255,.25); border-bottom: 1px solid rgba(255,255,255,.25); padding: 18px 0; display: flex; flex-direction: column; gap: 5px;"><span style="font-size: 18px; font-weight: 600;">Backing something new</span><span style="font-size: 17px; line-height: 1.5; color: #DCE4EE;">Ventures, PE advisory and EIR roles.</span></li>
+</ul>
+</div>
+<form class="fmt" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="flex: 1 1 400px; min-width: 0; background: #FFFFFF; color: #133159; border-radius: 10px; padding: 30px; display: flex; flex-direction: column; gap: 18px; position: relative; box-sizing: border-box;">
+<p id="form-error" hidden style="margin: 0; color: #B3261E; font-size: 15px;">Something went wrong. Please try again, or reach me on LinkedIn.</p>
+<p id="form-thanks" hidden style="margin: 0; font-family: Montserrat, sans-serif; font-size: 24px; font-weight: 300; line-height: 1.4;">Thanks. It's on its way to me, and I'll reply from my own inbox.</p>
+<div id="form-fields" style="display: flex; flex-direction: column; gap: 18px;">
+<div class="hp" aria-hidden="true"><label for="f-hp">Leave this empty</label><input id="f-hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+<div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" required autocomplete="name"></div>
+<div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
+<div class="field"><label for="f-topic">What's this about?</label><select id="f-topic" name="topic"><option>Building a team</option><option>Bringing in help</option><option>Backing something new</option><option>Catching up</option></select></div>
+<div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" required></textarea></div>
+<button class="btn" type="submit" style="background: #133159; color: #FFFFFF; align-self: flex-start;">Send</button>
+<p style="margin: 0; font-size: 15px; color: #4E5A69;">Or find me on <a href="https://www.linkedin.com/in/rkimura">LinkedIn</a>.</p>
+</div>
+</form>
+</div>
+</section>
+
+<footer style="background: #0B213D; color: #C9D3E0;">
+<div class="wrap" style="padding-top: 28px; padding-bottom: 28px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center; font-size: 16px;">
+<span style="display: flex; gap: 12px; align-items: center;"><span aria-hidden="true" style="display: flex; gap: 6px;"><span style="width: 10px; height: 10px; border-radius: 50%; background: #FFDE59;"></span><span style="width: 10px; height: 10px; background: #FFA28D;"></span><span style="width: 10px; height: 10px; border-radius: 50%; background: #ED4F5B;"></span></span>Ryan Kimura · Creating clarity and possibility</span>
+<a href="https://www.linkedin.com/in/rkimura" style="color: #FFFFFF;">LinkedIn</a>
+</div>
+</footer>
+
+</div>
+
+
+
+<script>
+(function () {
+  document.querySelectorAll('[data-case]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var id = btn.getAttribute('data-case');
+      var panel = document.getElementById(id + '-case');
+      var article = document.getElementById(id);
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', open ? 'false' : 'true');
+      panel.hidden = open;
+      if (!article.hasAttribute('data-wide')) article.className = open ? 'cn' : 'cw';
+    });
+  });
+  var see = document.getElementById('see-binder'), binder = document.getElementById('binder');
+  if (see && binder) see.addEventListener('click', function () { var o = see.getAttribute('aria-expanded') === 'true'; see.setAttribute('aria-expanded', o ? 'false' : 'true'); binder.hidden = o; });
+  var form = document.getElementById('contact-form');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var err = document.getElementById('form-error');
+      err.hidden = true;
+      fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
+        .then(function (r) {
+          if (!r.ok) throw new Error('send failed');
+          document.getElementById('form-fields').hidden = true;
+          document.getElementById('form-thanks').hidden = false;
+        })
+        .catch(function () { err.hidden = false; });
+    });
+  }
+})();
+</script>
+</body>
+</html>
