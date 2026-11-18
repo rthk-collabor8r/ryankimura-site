@@ -7,7 +7,7 @@ A single static page: `index.html` with its CSS and JavaScript inline, plus an `
 | File | What it is |
 |---|---|
 | `index.html` | The whole site |
-| `images/` | Web-sized photos and artifacts (about 2.3 MB total) |
+| `images/` | Web-sized photos and artifacts (about 1.8 MB total) |
 | `favicon.ico`, `favicon.png`, `apple-touch-icon.png` | Browser and phone icons (the three banner shapes on navy) |
 | `og-image.png` | The preview image when the link is shared (your LinkedIn banner) |
 | `robots.txt`, `sitemap.xml` | For search engines |
@@ -36,6 +36,5 @@ Spam protection is already in place: a hidden "honeypot" field that bots fill in
 
 ## Still to add
 
-- YouTube stills (TradeROI, webinar) if you want video back in a case
 - HandCut photos
 - Quotes in "In their words" are condensed and unnamed; swap in named ones as you get permission
